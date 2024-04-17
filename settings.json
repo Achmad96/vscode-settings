@@ -1,0 +1,44 @@
+{
+    
+    //* Window settings
+    "window.titleBarStyle": "native",
+    "window.menuBarVisibility": "hidden",
+    
+    //* Editor settings
+    "editor.minimap.enabled": false,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorStyle": "line",
+    "editor.renderWhitespace": "none",
+    "editor.indentSize": "tabSize",
+    "editor.tabSize": 2,
+    "editor.fontFamily": "'Menlo', MonoLisa",
+    "editor.fontLigatures": false,
+    "editor.fontSize": 15,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 100,
+    "editor.wrappingIndent": "indent",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+
+    //* CSS settings
+    "css.lint.unknownAtRules": "ignore",
+
+    //* Workbench settings
+    "workbench.iconTheme": "material-icon-theme",
+
+    //* Plugin - Discord Rich Presence
+    "vscord.behaviour.suppressNotifications": true,
+
+    //* Plugin - Tabnine
+    "tabnine.experimentalAutoImports": true,
+
+    //* Plugin - Prettier
+    "prettier.tabWidth": 2,
+    "prettier.semi": true,
+    "prettier.singleQuote": true,
+    "prettier.bracketSpacing": true,
+    "prettier.arrowParens": "always",
+    "prettier.insertPragma": false,
+    "prettier.trailingComma": "none",
+
+}
