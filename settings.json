@@ -1,7 +1,7 @@
 {
   //* Window settings
   "window.titleBarStyle": "native",
-  "window.menuBarVisibility": "hidden",
+  "window.menuBarVisibility": "toggle",
 
   //* Editor settings
   "editor.minimap.enabled": false,
@@ -12,7 +12,7 @@
   "editor.tabSize": 2,
 
   // * Editor Font settings
-  "editor.fontFamily": "'Menlo', MonoLisa",
+  "editor.fontFamily": "Fira Code, MonoLisa",
   "editor.fontLigatures": false,
   "editor.fontSize": 15,
 
@@ -24,11 +24,7 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
 
-  "[java]": {
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "redhat.java"
-  },
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono, monospace",
   "[python]": {
     "diffEditor.ignoreTrimWhitespace": false,
     "gitlens.codeLens.symbolScopes": ["!Module"],
@@ -63,7 +59,6 @@
 
   //* Workbench settings
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Darcula",
 
   //* Plugin - Discord Rich Presence
   "vscord.behaviour.suppressNotifications": true,
@@ -78,5 +73,6 @@
   "prettier.bracketSpacing": true,
   "prettier.arrowParens": "always",
   "prettier.insertPragma": false,
-  "prettier.trailingComma": "none"
+  "prettier.trailingComma": "none",
+  "window.customTitleBarVisibility": "never"
 }
