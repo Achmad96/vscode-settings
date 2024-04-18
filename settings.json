@@ -1,44 +1,82 @@
 {
-    
-    //* Window settings
-    "window.titleBarStyle": "native",
-    "window.menuBarVisibility": "hidden",
-    
-    //* Editor settings
-    "editor.minimap.enabled": false,
-    "editor.cursorBlinking": "smooth",
-    "editor.cursorStyle": "line",
-    "editor.renderWhitespace": "none",
-    "editor.indentSize": "tabSize",
-    "editor.tabSize": 2,
-    "editor.fontFamily": "'Menlo', MonoLisa",
-    "editor.fontLigatures": false,
-    "editor.fontSize": 15,
-    "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 100,
-    "editor.wrappingIndent": "indent",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  //* Window settings
+  "window.titleBarStyle": "native",
+  "window.menuBarVisibility": "hidden",
+
+  //* Editor settings
+  "editor.minimap.enabled": false,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorStyle": "line",
+  "editor.renderWhitespace": "none",
+  "editor.indentSize": "tabSize",
+  "editor.tabSize": 2,
+
+  // * Editor Font settings
+  "editor.fontFamily": "'Menlo', MonoLisa",
+  "editor.fontLigatures": false,
+  "editor.fontSize": 15,
+
+  // * Editor Wrap settings
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 100,
+  "editor.wrappingIndent": "indent",
+  // * Editor Formatting settings
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
+  "[java]": {
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.formatOnSave": true,
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "[python]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "gitlens.codeLens.symbolScopes": ["!Module"],
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.wordBasedSuggestions": "off"
+  },
 
-    //* CSS settings
-    "css.lint.unknownAtRules": "ignore",
+  // * Editor - Suggestions settings
+  // Controls whether suggestions should be accepted on commit characters. For example, in JavaScript, the semi-colon (`;`) can be a commit character that accepts a suggestion and types that character.
+  "editor.acceptSuggestionOnCommitCharacter": true,
+  // Controls if suggestions should be accepted on 'Enter' - in addition to 'Tab'. Helps to avoid ambiguity between inserting new lines or accepting suggestions. The value 'smart' means only accept a suggestion with Enter when it makes a textual change
+  "editor.acceptSuggestionOnEnter": "on",
+  // Controls the delay in ms after which quick suggestions will show up.
+  "editor.quickSuggestionsDelay": 10,
+  // Controls if suggestions should automatically show up when typing trigger characters
+  "editor.suggestOnTriggerCharacters": true,
+  // Controls if pressing tab inserts the best suggestion and if tab cycles through other suggestions
+  "editor.tabCompletion": "off",
+  // Controls whether sorting favours words that appear close to the cursor
+  "editor.suggest.localityBonus": true,
+  // Controls how suggestions are pre-selected when showing the suggest list
+  "editor.suggestSelection": "first",
+  // Enable word based suggestions
+  "editor.wordBasedSuggestions": "matchingDocuments",
+  // Enable parameter hints
+  "editor.parameterHints.enabled": true,
 
-    //* Workbench settings
-    "workbench.iconTheme": "material-icon-theme",
+  //* CSS settings
+  "css.lint.unknownAtRules": "ignore",
 
-    //* Plugin - Discord Rich Presence
-    "vscord.behaviour.suppressNotifications": true,
+  //* Workbench settings
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Darcula",
 
-    //* Plugin - Tabnine
-    "tabnine.experimentalAutoImports": true,
+  //* Plugin - Discord Rich Presence
+  "vscord.behaviour.suppressNotifications": true,
 
-    //* Plugin - Prettier
-    "prettier.tabWidth": 2,
-    "prettier.semi": true,
-    "prettier.singleQuote": true,
-    "prettier.bracketSpacing": true,
-    "prettier.arrowParens": "always",
-    "prettier.insertPragma": false,
-    "prettier.trailingComma": "none",
+  //* Plugin - Tabnine
+  "tabnine.experimentalAutoImports": true,
 
+  //* Plugin - Prettier
+  "prettier.tabWidth": 2,
+  "prettier.semi": true,
+  "prettier.singleQuote": true,
+  "prettier.bracketSpacing": true,
+  "prettier.arrowParens": "always",
+  "prettier.insertPragma": false,
+  "prettier.trailingComma": "none"
 }
