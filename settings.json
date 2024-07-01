@@ -1,28 +1,30 @@
 {
-  //* Window Settings
+  // Window Settings
   "window.titleBarStyle": "native",
   "window.menuBarVisibility": "toggle",
   "window.customTitleBarVisibility": "never",
 
-  //* Editor Settings
+  // Editor Settings
   "editor.minimap.enabled": false,
   "editor.cursorBlinking": "smooth",
-  "editor.cursorStyle": "line",
-  "editor.renderWhitespace": "none",
+  "editor.cursorStyle": "block",
+  "editor.renderWhitespace": "trailing",
   "editor.indentSize": "tabSize",
   "editor.tabSize": 2,
+  "editor.lineHeight": 2,
 
-  // * Editor Font Settings
-  "editor.fontFamily": "Fira Code, MonoLisa",
+  //  Editor Font Settings
+  "editor.fontFamily": "Hack, Fira Code, Consolas, IBM Plex Mono, Fira Code",
   "editor.fontLigatures": false,
-  "editor.fontSize": 15,
+  "editor.fontSize": 14,
+  "editor.fontWeight": "500",
 
-  // * Editor Wrap Settings
+  //  Editor Wrap Settings
   "editor.wordWrap": "wordWrapColumn",
-  "editor.wordWrapColumn": 100,
+  "editor.wordWrapColumn": 200,
   "editor.wrappingIndent": "indent",
 
-  // * Editor Formatting Settings
+  //  Editor Formatting Settings
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
 
@@ -31,11 +33,11 @@
     "gitlens.codeLens.symbolScopes": ["!Module"],
     "editor.formatOnType": true,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "ms-python.python",
+    "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.wordBasedSuggestions": "off"
   },
 
-  // * Editor - Suggestions Settings
+  //  Editor - Suggestions Settings
   "editor.acceptSuggestionOnCommitCharacter": true,
   "editor.acceptSuggestionOnEnter": "on",
   "editor.quickSuggestionsDelay": 10,
@@ -46,30 +48,37 @@
   "editor.wordBasedSuggestions": "matchingDocuments",
   "editor.parameterHints.enabled": true,
 
-  // * Terminal Settings
+  //  Terminal Settings
   "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono, monospace",
 
-  //* Tailwind CSS Intellisense
+  // Tailwind CSS Intellisense
   "files.associations": {
     "*.css": "tailwindcss"
   },
   "tailwindCSS.classAttributes": ["class", "className", "ngClass"],
 
-  //* Workbench Settings
+  // Workbench Settings
   "workbench.iconTheme": "material-icon-theme",
 
-  //* Discord Rich Presence Settings
+  // Discord Rich Presence Settings
   "vscord.behaviour.suppressNotifications": true,
 
-  //* Tabnine Settings
-  "tabnine.experimentalAutoImports": true,
-
-  //* Prettier Settings
+  // Prettier Settings
   "prettier.tabWidth": 2,
   "prettier.semi": true,
   "prettier.singleQuote": true,
   "prettier.bracketSpacing": true,
   "prettier.arrowParens": "always",
   "prettier.insertPragma": false,
-  "prettier.trailingComma": "none"
+  "prettier.trailingComma": "none",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "gitlens.graph.minimap.enabled": false,
+  "workbench.statusBar.visible": true,
+  "cmake.configureOnOpen": true,
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.tabSize": 2
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "diffEditor.ignoreTrimWhitespace": false
 }
