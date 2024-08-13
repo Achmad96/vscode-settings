@@ -1,41 +1,57 @@
 {
   // Window Settings
-  "window.titleBarStyle": "native",
-  "window.menuBarVisibility": "toggle",
+  "window.titleBarStyle": "custom",
+  "window.menuBarVisibility": "hidden",
   "window.customTitleBarVisibility": "never",
+  "window.zoomLevel": 0,
+
+  // Workbench settings
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.editor.showTabs": "single",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.layoutControl.enabled": true,
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "workbench.colorCustomizations": {},
 
   // Editor Settings
   "editor.minimap.enabled": false,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.scale": 1,
+  "editor.minimap.showSlider": "mouseover",
+  "editor.minimap.size": "fill",
   "editor.cursorBlinking": "smooth",
-  "editor.cursorStyle": "block",
-  "editor.renderWhitespace": "trailing",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorStyle": "line",
+  "editor.renderWhitespace": "none",
+  "editor.renderLineHighlight": "gutter",
+  "editor.lightbulb.enabled": "off",
+  "editor.showFoldingControls": "never",
+  "editor.dragAndDrop": false,
+  "editor.hideCursorInOverviewRuler": true,
   "editor.indentSize": "tabSize",
   "editor.tabSize": 2,
-  "editor.lineHeight": 2,
+  "editor.lineHeight": 1.7,
+  "explorer.compactFolders": true,
+  "breadcrumbs.enabled": false,
 
   //  Editor Font Settings
-  "editor.fontFamily": "Hack, Fira Code, Consolas, IBM Plex Mono, Fira Code",
+  "editor.fontFamily": "Hack, Fira Code, Consolas",
   "editor.fontLigatures": false,
-  "editor.fontSize": 14,
-  "editor.fontWeight": "500",
+  "editor.fontSize": 12.5,
+  "editor.fontWeight": "400",
 
   //  Editor Wrap Settings
-  "editor.wordWrap": "wordWrapColumn",
-  "editor.wordWrapColumn": 200,
+  "editor.wordWrap": "off",
   "editor.wrappingIndent": "indent",
 
   //  Editor Formatting Settings
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-
-  "[python]": {
-    "diffEditor.ignoreTrimWhitespace": false,
-    "gitlens.codeLens.symbolScopes": ["!Module"],
-    "editor.formatOnType": true,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.wordBasedSuggestions": "off"
-  },
+  "prettier.bracketSameLine": true,
+  "prettier.proseWrap": "always",
+  "prettier.printWidth": 300,
+  "tailwindCSS.experimental.classRegex": ["class:\\s*?[\"'`]([^\"'`]*).*?,"],
 
   //  Editor - Suggestions Settings
   "editor.acceptSuggestionOnCommitCharacter": true,
@@ -48,20 +64,13 @@
   "editor.wordBasedSuggestions": "matchingDocuments",
   "editor.parameterHints.enabled": true,
 
+  // Git Diff settings
+  "scm.diffDecorations": "gutter",
+  "git.decorations.enabled": true,
+
   //  Terminal Settings
-  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono, monospace",
-
-  // Tailwind CSS Intellisense
-  "files.associations": {
-    "*.css": "tailwindcss"
-  },
-  "tailwindCSS.classAttributes": ["class", "className", "ngClass"],
-
-  // Workbench Settings
-  "workbench.iconTheme": "material-icon-theme",
-
-  // Discord Rich Presence Settings
-  "vscord.behaviour.suppressNotifications": true,
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono, Monaco, monospace",
+  "terminal.integrated.tabs.enabled": false,
 
   // Prettier Settings
   "prettier.tabWidth": 2,
@@ -71,14 +80,21 @@
   "prettier.arrowParens": "always",
   "prettier.insertPragma": false,
   "prettier.trailingComma": "none",
+
+  // EXTENSION SETTINGS
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "tailwindCSS.classAttributes": ["class", "className", "ngClass"],
   "typescript.updateImportsOnFileMove.enabled": "always",
   "gitlens.graph.minimap.enabled": false,
-  "workbench.statusBar.visible": true,
-  "cmake.configureOnOpen": true,
-  "[cpp]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools",
-    "editor.tabSize": 2
-  },
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "material-icon-theme.hidesExplorerArrows": true,
+  // "codeium.enableCodeLens": false,
+  "apc.electron": {
+    "titleBarStyle": "hidden"
+  },
+  "workbench.editor.enablePreview": false,
+  "workbench.colorTheme": "Night Owl (No Italics)"
 }
